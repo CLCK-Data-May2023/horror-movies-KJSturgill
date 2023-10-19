@@ -29,12 +29,15 @@ def get_paths() -> tuple:
     parser.add_argument("db", nargs="?",
                         help="path to the sqlite3 database file", 
                         default="c:/Users/bisho/Desktop/CKY_DA/tues-data-analysis/horror-movies-KJSturgill/db/movies.db")
+#                        default="db/movies.db")
     parser.add_argument("sql", nargs="?",
                         help="path to the file containing the sql query",
                         default="c:/Users/bisho/Desktop/CKY_DA/tues-data-analysis/horror-movies-KJSturgill/sql/horror_movies.sql")
+#                        default="sql/horror_movies.sql")
     parser.add_argument("csv", nargs="?",
                         help="path to the csv file that will be created",
                         default="c:/Users/bisho/Desktop/CKY_DA/tues-data-analysis/horror-movies-KJSturgill/data/movies.csv")
+#                        default="data/movies.csv")
     args = parser.parse_args()
     return args.db, args.sql, args.csv
 
